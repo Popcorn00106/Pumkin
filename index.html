@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Slot Machine Game</h1>
+        
+        <!-- Slot Machine Display -->
+        <div id="slots">
+            <div id="reel1" class="reel"></div>
+            <div id="reel2" class="reel"></div>
+            <div id="reel3" class="reel"></div>
+            <div id="reel4" class="reel"></div>
+            <div id="reel5" class="reel"></div>
+            <div id="reel6" class="reel"></div>
+            <div id="reel7" class="reel"></div>
+            <div id="reel8" class="reel"></div>
+            <div id="reel9" class="reel"></div>
+            <div id="reel10" class="reel"></div>
+            <div id="reel11" class="reel"></div>
+            <div id="reel12" class="reel"></div>
+            <div id="reel13" class="reel"></div>
+            <div id="reel14" class="reel"></div>
+            <div id="reel15" class="reel"></div>
+        </div>
+        
+        <!-- Question Display -->
+        <div id="questions">
+            <p id="question">Question will be displayed here</p>
+            <button id="answerOne" class="answer-button" onclick="answerQuestion('answerOne')">Answer 1</button>
+            <button id="answerTwo" class="answer-button" onclick="answerQuestion('answerTwo')">Answer 2</button>
+            <button id="answerThree" class="answer-button" onclick="answerQuestion('answerThree')">Answer 3</button>
+        </div>
+        
+        <!-- Spin and Bet Controls -->
+        <div id="controls">
+            <input type="number" id="bet" min="1" max="100" placeholder="Enter bet (1-100)" />
+            <button id="spin" onclick="handleSpin()">Spin</button>
+        </div>
+        
+        <!-- Results Display -->
+        <div id="results">
+            <p id="payout">Payout: 0 cents</p>
+            <p id="bankAmount">Bank Amount: 100 cents</p>
+            <p id="freeSpins">Free Spins Awarded: 0</p>
+            <p id="diceRoll">Dice Roll: 0</p>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
